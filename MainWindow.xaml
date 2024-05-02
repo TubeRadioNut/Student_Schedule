@@ -1,0 +1,103 @@
+﻿<Window
+    x:Class="Student_Schedule.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Student_Schedule"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Canvas>
+        <Button
+            x:Name="btnAddProgramming"
+            Content="Programming"
+            Canvas.Left="35"
+            Canvas.Top="113"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Height="64"
+            Width="113" />
+        <Button
+            x:Name="btnDataBase"
+            Content="Database"
+            Canvas.Left="35"
+            Canvas.Top="233"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Width="113"
+            Height="64" />
+        <Button
+            x:Name="btnFrontEnd"
+            Content="Front End Web Dev"
+            Canvas.Left="35"
+            Canvas.Top="347"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Width="113"
+            Height="64" />
+        <Button
+            x:Name="btnFinalizeSchedule"
+            Content="Finalize Schedule"
+            Canvas.Left="201"
+            Canvas.Top="391"
+            RenderTransformOrigin="-0.127,1.277"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Width="253" />
+        <RichTextBox
+            Height="279"
+            Width="253"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Canvas.Left="201"
+            Canvas.Top="85">
+            <FlowDocument>
+                <Paragraph>
+                    <Run
+                        x:Name="rtbDisplaySchedule"
+                        Text="" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox
+            Height="329"
+            Width="279"
+            HorizontalAlignment="Center"
+            Canvas.Left="481"
+            VerticalAlignment="Top"
+            Canvas.Top="85">
+            <FlowDocument>
+                <Paragraph>
+                    <Run
+                        x:Name="rtbPreviousSchedule"
+                        Text="" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label
+            Content="Student Name"
+            Canvas.Left="201"
+            Canvas.Top="42"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Width="93" />
+        <TextBox
+            x:Name="txtName"
+            Canvas.Left="308"
+            TextWrapping="Wrap"
+            Canvas.Top="46"
+            Width="146"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+        <ComboBox
+            x:Name="cmbChooseSchedule"
+            Canvas.Left="481"
+            Canvas.Top="33"
+            Width="279"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
+
+    </Canvas>
+</Window>
