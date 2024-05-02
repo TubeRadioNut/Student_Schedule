@@ -32,13 +32,15 @@ namespace Student_Schedule
         }
 
         //Properies
-        //-ProgrammingCourses': Read-only property to access the list of programmiong courses
-        //-'DatabaseCourses': Read-only property to access the list of database courses
-        //- 'FrontEndCourses': Read-only property to access the list of front-end develepment courses
-
-        
-
-
+        public List<Course> ProgrammingCourses
+        {
+            //Read only
+            get { return _programmingCourses; }
+        }
+        //Read only
+        public List<Course> DatabaseCourses { get => _databaseCourses; }
+        //Read only
+        public List<Course> FrontEndCourses { get => _frontEndCourses; }
     }//end of class
 
 }//end namespace

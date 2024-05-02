@@ -14,38 +14,42 @@
             x:Name="btnAddProgramming"
             Content="Programming"
             Canvas.Left="35"
-            Canvas.Top="113"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
+            Canvas.Top="85"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
             Height="64"
-            Width="113" />
+            Width="113"
+            Click="btnAddProgramming_Click" />
         <Button
             x:Name="btnDataBase"
             Content="Database"
             Canvas.Left="35"
-            Canvas.Top="233"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
+            Canvas.Top="205"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
             Width="113"
-            Height="64" />
+            Height="64"
+            Click="btnDataBase_Click" />
         <Button
             x:Name="btnFrontEnd"
             Content="Front End Web Dev"
             Canvas.Left="35"
-            Canvas.Top="347"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
+            Canvas.Top="327"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
             Width="113"
-            Height="64" />
+            Height="64"
+            Click="btnFrontEnd_Click" />
         <Button
             x:Name="btnFinalizeSchedule"
             Content="Finalize Schedule"
             Canvas.Left="201"
-            Canvas.Top="391"
+            Canvas.Top="376"
             RenderTransformOrigin="-0.127,1.277"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Width="253" />
+            Width="253"
+            Click="btnFinalizeSchedule_Click" />
         <RichTextBox
             Height="279"
             Width="253"
@@ -97,7 +101,8 @@
             Canvas.Top="33"
             Width="279"
             HorizontalAlignment="Left"
-            VerticalAlignment="Center" />
+            VerticalAlignment="Center"
+            SelectionChanged="cmbChooseSchedule_SelectionChanged" />
 
     </Canvas>
 </Window>
